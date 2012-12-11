@@ -55,3 +55,18 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.30.0-3
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Sat May 28 2011 Funda Wang <fwang@mandriva.org> 0.30.0-2
++ Revision: 680654
+- mass rebuild
+
+* Fri Dec 03 2010 Shlomi Fish <shlomif@mandriva.org> 0.30.0-1mdv2011.0
++ Revision: 607517
+- import perl-B-Hooks-OP-PPAddr
+

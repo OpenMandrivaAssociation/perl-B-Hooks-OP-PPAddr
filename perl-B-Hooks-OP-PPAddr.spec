@@ -1,15 +1,15 @@
 %define upstream_name    B-Hooks-OP-PPAddr
-%define upstream_version 0.03
+%define upstream_version 0.06
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	5
+Version:    %{upstream_version}
+Release:	1
 
 Summary:    Hook into opcode execution
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/B/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://github.com/karenetheridge/B-Hooks-OP-PPAddr
+Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Hooks-OP-PPAddr-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(ExtUtils::Depends)

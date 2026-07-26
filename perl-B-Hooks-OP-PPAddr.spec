@@ -1,15 +1,13 @@
 %define upstream_name    B-Hooks-OP-PPAddr
-%define upstream_version 0.06
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	1
+Version:    0.06
+Release:	2
 
 Summary:    Hook into opcode execution
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/karenetheridge/B-Hooks-OP-PPAddr
-Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Hooks-OP-PPAddr-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Hooks-OP-PPAddr-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(ExtUtils::Depends)
@@ -32,7 +30,7 @@ modules to use. Include the following in your Makefile.PL:
     );
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
